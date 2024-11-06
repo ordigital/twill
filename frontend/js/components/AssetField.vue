@@ -25,6 +25,7 @@
                           :altTextMaxLength="altTextMaxLength"
                           :captionMaxLength="captionMaxLength"
                           :extraMetadatas="extraMetadatas"
+                          :active-crop="activeCrop"
                           :disabled="disabled">
           </a17-mediafield>
         </div>
@@ -80,6 +81,10 @@
       required: {
         type: Boolean,
         default: false
+      },
+      activeCrop: {
+        type: Boolean,
+        default: true
       },
     },
     data: function () {

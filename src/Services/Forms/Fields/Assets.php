@@ -14,6 +14,7 @@ class Assets extends Medias
         // Max needs to be 1 by default for this component.
         // Cannot be null.
         $instance->max = 1;
+        $instance->hideActiveCrop();
 
         return $instance;
     }

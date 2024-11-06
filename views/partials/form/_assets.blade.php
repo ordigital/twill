@@ -17,6 +17,7 @@
             @if (!$withAddInfo) withAddInfo: false, @endif
             @if (!$withVideoUrl) withVideoUrl: false, @endif
             @if (!$withCaption) withCaption: false, @endif
+            @if(!$activeCrop ?? false) activeCrop: false, @endif
             {!! $formFieldName(true) !!}
         }"
     ></a17-locale>

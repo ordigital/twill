@@ -13,6 +13,7 @@
       :captionMaxLength="captionMaxLength"
       :extraMetadatas="extraMetadatas"
       :disabled="disabled"
+      :active-crop="activeCrop"
     ></a17-assetfield>
   </a17-inputframe>
 </template>
@@ -58,6 +59,10 @@
       required: {
         type: Boolean,
         default: false
+      },
+      activeCrop: {
+        type: Boolean,
+        default: true
       },
     },
   }
