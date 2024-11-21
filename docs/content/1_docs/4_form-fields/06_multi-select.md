@@ -200,7 +200,7 @@ public function sectors() {
 - In your repository, make sure to sync the association when saving:
 
 ```php
-public function afterSave($object, $fields)
+public function afterSave($object, $fields): void
 {
     $object->sectors()->sync($fields['sectors'] ?? []);
 
